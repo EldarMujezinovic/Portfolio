@@ -1,8 +1,14 @@
 * {
   box-sizing: border-box; }
 
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 body {
-  background: #444;
+  background: #333;
   color: #ffffff;
   height: 100%;
   margin: 0;
@@ -21,11 +27,6 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.5); }
 
-.overlay {
-  width: 100%;
-  height: 100%;
-  overflow: hidden; }
-
 h1,
 h2 {
   margin: 0;
@@ -34,11 +35,15 @@ h2 {
   h2.lg-heading {
     font-size: 5rem;
     font-family: 'Black Ops One', cursive;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: black; }
   h1.sm-heading,
   h2.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem; }
+    padding: 0.2rem 1rem;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: whitesmoke; }
 
 a {
   color: #ffffff;
@@ -87,7 +92,7 @@ ul li {
   padding: 5px 10px;
   font-size: 1.5rem;
   text-transform: uppercase;
-  font-family: 'Orbitron', sans-serif; }
+  font-family: 'Orlass'; }
 
 nav {
   position: fixed;
@@ -104,3 +109,67 @@ nav {
 .text-primary:hover {
   transition: all 0.9s ease-out;
   color: brown; }
+
+.mine-section {
+  overflow: hidden;
+  text-align: center;
+  padding: 60px; }
+
+.mine-section h1 {
+  color: white;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  font-size: 40px; }
+
+.border {
+  display: block;
+  margin: auto;
+  color: brown;
+  border: solid;
+  width: 400px;
+  height: 3px;
+  margin-bottom: 40px; }
+
+.photo {
+  margin-bottom: 40px; }
+
+.photo a {
+  display: inline-block;
+  margin: 0 30px;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 50%; }
+
+.photo a img {
+  filter: grayscale(100%);
+  transition: 0.4s all; }
+
+.photo a:hover > img {
+  filter: none; }
+
+.text-section {
+  width: 600px;
+  margin: auto;
+  font-size: 20px;
+  color: white;
+  text-align: center; }
+
+.name {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Black Ops One', cursive; }
+
+#text {
+  font-family: 'Inconsolata', monospace;
+  font-size: 22px; }
+
+.git-item {
+  color: blue;
+  margin: 30px; }
+
+.text-section a:hover {
+  color: black; }
