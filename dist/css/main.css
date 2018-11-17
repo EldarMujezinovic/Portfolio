@@ -1,25 +1,3 @@
-.menu-btn {
-  position: absolute;
-  z-index: 3;
-  right: 35px;
-  top: 35px;
-  cursor: pointer;
-  transition: all 0.9s ease-out; }
-  .menu-btn .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: #ffffff;
-    transition: all 0.9s ease-out; }
-  .menu-btn.close {
-    transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
-
 * {
   box-sizing: border-box; }
 
@@ -31,7 +9,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/img.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img .overlay {
@@ -43,18 +21,24 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.5); }
 
+.overlay {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
 h1,
 h2 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading,
   h2.lg-heading {
-    font-size: 5rem; }
+    font-size: 5rem;
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase; }
   h1.sm-heading,
   h2.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    padding: 0.2rem 1rem; }
 
 a {
   color: #ffffff;
@@ -66,13 +50,17 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #ccae06; }
+  color: brown; }
 
 main {
   padding: 4rem;
   height: 100%; }
+  main .contact {
+    margin-left: 30px;
+    font-size: 20px; }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 11.5rem;
+    float: right; }
     main .icons a {
       padding: 20px; }
       main .icons a:hover {
@@ -82,3 +70,37 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  color: #ffffff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s; }
+
+ul li {
+  display: inline;
+  float: right;
+  margin-right: 40px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif; }
+
+nav {
+  position: fixed;
+  width: 100%; }
+
+.nav-link:hover {
+  color: red;
+  transition: all 0.9s ease-out; }
+
+.text-secondary:hover {
+  transition: all 0.9s ease-out;
+  color: whitesmoke; }
+
+.text-primary:hover {
+  transition: all 0.9s ease-out;
+  color: brown; }

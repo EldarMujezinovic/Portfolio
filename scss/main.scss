@@ -1,5 +1,4 @@
 @import 'config';
-@import 'menu';
 *{
     box-sizing: border-box;
 }
@@ -13,6 +12,11 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
+.overlay{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
 h1,
 h2 {
@@ -21,11 +25,14 @@ h2 {
  
     &.lg-heading{
         font-size: 5rem;
+        font-family: 'Black Ops One', cursive;
+        text-transform: uppercase;
+        
     }
     &.sm-heading{
         margin-bottom: 2rem; 
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
+        
     }
 } 
 
@@ -41,14 +48,21 @@ header{
     width: 100%;
 }
 .text-secondary{
-    color:$secondary-color;
+    color:brown;
 }
 main{
     padding:4rem;
     height: 100%;
+    
+    .contact{
+    margin-left: 30px;
+     font-size: 20px;
+    }
 
     .icons{
-    margin-top: 1rem;
+    margin-top: 11.5rem;
+    float: right;
+    
    
        a{
            padding: 20px;
@@ -66,4 +80,43 @@ main{
             margin-top: 20vh;
         }
     }
+}
+nav ul{
+    list-style: none;
+    overflow: hidden;
+    color:#ffffff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+ul li{
+    display: inline;  
+    float: right;
+    margin-right: 40px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+.nav-link:hover{
+    color: red;
+    @include easeOut;
+    
+}
+
+
+.text-secondary:hover{
+    @include easeOut;
+    color:whitesmoke;
+}
+.text-primary:hover{
+    @include easeOut;
+    color:brown;  
+    
 }
