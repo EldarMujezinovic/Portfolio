@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
+  background: #333;
+  color: #ffffff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/img.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(68, 68, 68, 0.5); }
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading {
+    font-size: 5rem;
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+    color: black; }
+  h1.sm-heading,
+  h2.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: whitesmoke; }
+
+a {
+  color: #ffffff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: brown; }
+
+main {
+  padding: 4rem;
+  height: 100%; }
+  main .contact {
+    margin-left: 30px;
+    font-size: 20px; }
+  main .icons {
+    margin-top: 11.5rem;
+    float: right; }
+    main .icons a {
+      padding: 20px; }
+      main .icons a:hover {
+        color: red;
+        transition: all 0.9s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  color: #ffffff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s; }
+
+ul li {
+  display: inline;
+  float: right;
+  margin-right: 40px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Orlass'; }
+
+nav {
+  position: fixed;
+  width: 100%; }
+
+.nav-link:hover {
+  color: red;
+  transition: all 0.9s ease-out; }
+
+.text-secondary:hover {
+  transition: all 0.9s ease-out;
+  color: whitesmoke; }
+
+.text-primary:hover {
+  transition: all 0.9s ease-out;
+  color: brown; }
+
+.mine-section {
+  overflow: hidden;
+  text-align: center;
+  padding: 60px; }
+
+.mine-section h1 {
+  color: white;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  font-size: 40px; }
+
+.border {
+  display: block;
+  margin: auto;
+  color: brown;
+  border: solid;
+  width: 400px;
+  height: 3px;
+  margin-bottom: 40px; }
+
+.photo {
+  margin-bottom: 40px; }
+
+.photo a {
+  display: inline-block;
+  margin: 0 30px;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 50%; }
+
+.photo a img {
+  filter: grayscale(100%);
+  transition: 0.4s all; }
+
+.photo a:hover > img {
+  filter: none; }
+
+.text-section {
+  width: 600px;
+  margin: auto;
+  font-size: 20px;
+  color: white;
+  text-align: center; }
+
+.name {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Black Ops One', cursive; }
+
+#text {
+  font-family: 'Inconsolata', monospace;
+  font-size: 22px; }
+
+.git-item {
+  color: blue;
+  margin: 30px; }
+
+.text-section a:hover {
+  color: black; }
